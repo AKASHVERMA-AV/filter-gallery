@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.wrapper{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    
+
+
+}
+h2{
+    text-align: center;
+    margin:20px 0px;
+    color: black;
+    filter: drop-shadow(1px 1px 1px rgb(160, 0, 210));
+}
+.gally{
+    min-height: 100vh;
+    width: 95%;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+   
+   
+  
+
+}
+body{
+    overflow-x: hidden;
+}
+figure{
+    
+    width: 30%;
+    height: 300px;
+    position: relative;
+    margin: 20px;
+    filter: grayscale(100%);
+    border-radius: 20px;
+
+    
+    
+   
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 20px;
+    
+}
+figcaption{
+    position:absolute;
+    bottom: 0px;
+    
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    
+    background: linear-gradient(rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.3));
+border-radius: 20px;
+padding: 5px;
+}
+figure:hover{
+    filter: grayscale(0%);
+
+   
+   
+}
+img:hover~figcaption{
+    opacity: 1;}
+
+img:hover{
+    transition: 1s;
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    transform: scale(1.01);
+
+}
